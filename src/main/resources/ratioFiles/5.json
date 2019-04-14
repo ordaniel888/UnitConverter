@@ -1,0 +1,28 @@
+{
+  "conversionRatios": [
+    {
+      "src" : "cup",
+      "dest" : "tablespoon",
+      "ratio": "16"
+    },{
+      "src" : "tablespoon",
+      "dest" : "teaspoon",
+      "ratio": "3"
+    },{
+      "src" : "pound",
+      "dest" : "ounce",
+      "ratio": "10"
+    }
+    ],
+      "UnitsToConvert": [
+    {
+      "src" : "teaspoon",
+      "dest" : "cup",
+      "amount": "5"
+    },{
+      "src" : "ounce",
+      "dest" : "pound",
+      "amount": "7"
+    }   
+    ]
+}

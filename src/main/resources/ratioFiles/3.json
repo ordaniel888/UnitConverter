@@ -1,0 +1,19 @@
+{
+  "conversionRatios": [
+    {
+      "src" : "teaspoon",
+      "dest" : "dash",
+      "ratio": "8"
+    },{
+      "src" : "teaspoon",
+      "dest" : "pinch",
+      "ratio": "16"
+    }
+    ],
+      "UnitsToConvert": [{
+      "src" : "dash",
+      "dest" : "pinch",
+      "amount": "3"
+    }   
+    ]
+}

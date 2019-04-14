@@ -1,0 +1,19 @@
+{
+  "conversionRatios": [
+    {
+      "src" : "cup",
+      "dest" : "tablespoon",
+      "ratio": "16"
+    },{
+      "src" : "tablespoon",
+      "dest" : "teaspoon",
+      "ratio": "3"
+    }
+    ],
+      "UnitsToConvert": [{
+      "src" : "teaspoon",
+      "dest" : "cup",
+      "amount": "5"
+    }   
+    ]
+}

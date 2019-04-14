@@ -1,0 +1,15 @@
+{
+  "conversionRatios" : [
+    {
+      "src" : "pound",
+      "dest" : "ounce",
+      "ratio" : "10"
+    }
+    ],
+  "UnitsToConvert" : [{
+      "src" : "pound",
+      "dest" : "ounce",
+      "amount" : "2.5"
+    }   
+    ]
+}
