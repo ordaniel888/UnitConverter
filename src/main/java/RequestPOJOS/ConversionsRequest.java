@@ -29,23 +29,11 @@ public class ConversionsRequest {
         return new ObjectMapper().readValue(strJson, ConversionsRequest.class);
     }
 
-    private static boolean isRatioDelimiter(String line) {
-        return line.equals("\n");
-    }
-
-    public List<ConversionRatio> getConversionRatios() {
+    public List<ConversionRatio> conversionRatios() {
         return conversionRatios;
     }
 
-    public List<ConversionRequest> getConversionRequests() {
+    public List<ConversionRequest> conversionRequests() {
         return conversionRequests;
-    }
-
-    public void setConversionRatios(List<ConversionRatio> conversionRatios) {
-        this.conversionRatios = conversionRatios;
-    }
-
-    public void setConversionRequests(List<ConversionRequest> conversionRequests) {
-        this.conversionRequests = conversionRequests;
     }
 }

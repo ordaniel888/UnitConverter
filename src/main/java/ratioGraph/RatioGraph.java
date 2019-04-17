@@ -17,10 +17,10 @@ public class RatioGraph {
         Set<String> vertexes = new HashSet<>();
 
         for (ConversionRatio curr :conversionRatios) {
-            this.addVertex(curr.getSrc());
-            this.addVertex(curr.getDest());
-            this.addEdge(curr.getSrc(),curr.getDest(), curr.getRatio());
-            this.addEdge(curr.getDest(),curr.getSrc(), 1 / curr.getRatio());
+            this.addVertex(curr.src());
+            this.addVertex(curr.dest());
+            this.addEdge(curr.src(),curr.dest(), curr.ratio());
+            this.addEdge(curr.dest(),curr.src(), 1 / curr.ratio());
         }
     }
 

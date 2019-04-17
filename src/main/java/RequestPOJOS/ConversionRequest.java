@@ -23,27 +23,15 @@ public class ConversionRequest {
         this.amount = amount;
     }
 
-    public String getSrc() {
+    public String src() {
         return src;
     }
 
-    public void setSrc(String src) {
-        this.src = src;
-    }
-
-    public String getDest() {
+    public String dest() {
         return dest;
     }
 
-    public void setDest(String dest) {
-        this.dest = dest;
-    }
-
-    public double getAmount() {
+    public double amount() {
         return amount;
-    }
-
-    public void setAmount(double amount) {
-        this.amount = amount;
     }
 }

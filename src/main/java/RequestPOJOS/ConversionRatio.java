@@ -22,27 +22,15 @@ public class ConversionRatio {
         this.ratio = ratio;
     }
 
-    public String getSrc() {
+    public String src() {
         return src;
     }
 
-    public void setSrc(String src) {
-        this.src = src;
-    }
-
-    public String getDest() {
+    public String dest() {
         return dest;
     }
 
-    public void setDest(String dest) {
-        this.dest = dest;
-    }
-
-    public double getRatio() {
+    public double ratio() {
         return ratio;
-    }
-
-    public void setRatio(double ratio) {
-        this.ratio = ratio;
     }
 }
