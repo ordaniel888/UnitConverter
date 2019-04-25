@@ -14,14 +14,14 @@ public class ConversionsRequest {
     private List<ConversionRatio> conversionRatios;
 
     @JsonProperty(value = "UnitsToConvert", required = true)
-    private List<ConversionRequest> conversionRequests;
+    private List<UnitToConvert> unitsToConvert;
 
     @JsonCreator
     private ConversionsRequest(
             @JsonProperty(value = "conversionRatios", required = true) List<ConversionRatio> conversionRatios,
-            @JsonProperty(value = "UnitsToConvert", required = true) List<ConversionRequest> conversionRequests) {
+            @JsonProperty(value = "UnitsToConvert", required = true) List<UnitToConvert> unitsToConvert) {
         this.conversionRatios = conversionRatios;
-        this.conversionRequests = conversionRequests;
+        this.unitsToConvert = unitsToConvert;
     }
 
     public static ConversionsRequest fromFile(String fileName) throws IOException {
@@ -33,7 +33,7 @@ public class ConversionsRequest {
         return conversionRatios;
     }
 
-    public List<ConversionRequest> conversionRequests() {
-        return conversionRequests;
+    public List<UnitToConvert> unitsToConvert() {
+        return unitsToConvert;
     }
 }

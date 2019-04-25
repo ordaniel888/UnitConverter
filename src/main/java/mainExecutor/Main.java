@@ -1,5 +1,5 @@
 package mainExecutor;
-import RequestPOJOS.ConversionRequest;
+import RequestPOJOS.UnitToConvert;
 import RequestPOJOS.ConversionsRequest;
 import ratioGraph.RatioGraph;
 
@@ -10,7 +10,7 @@ public class Main {
         ConversionsRequest request = ConversionsRequest.fromFile("5.json");
         RatioGraph ratioGraph = new RatioGraph(request.conversionRatios());
 
-        for (ConversionRequest curr : request.conversionRequests()) {
+        for (UnitToConvert curr : request.unitsToConvert()) {
             double ratio = ratioGraph.breadthFirstTraversal(curr.src(),curr.dest());
             System.out.println(curr.src() + " -> " + curr.dest() + " : " + ratio*curr.amount());
         }

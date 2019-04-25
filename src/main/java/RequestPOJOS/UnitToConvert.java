@@ -3,7 +3,7 @@ package RequestPOJOS;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class ConversionRequest {
+public class UnitToConvert {
 
     @JsonProperty(value = "src", required = true)
     private String src;
@@ -15,9 +15,9 @@ public class ConversionRequest {
     private double amount;
 
     @JsonCreator
-    public ConversionRequest(@JsonProperty(value = "src", required = true) String src,
-                             @JsonProperty(value = "dest", required = true) String dest,
-                             @JsonProperty(value = "amount", required = true) double amount) {
+    public UnitToConvert(@JsonProperty(value = "src", required = true) String src,
+                         @JsonProperty(value = "dest", required = true) String dest,
+                         @JsonProperty(value = "amount", required = true) double amount) {
         this.src = src;
         this.dest = dest;
         this.amount = amount;
